@@ -1,10 +1,25 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title> 1 </title>
-  </head>
-  
-  <body>
-    가나다
-  </body>
-</html>
+<style>
+	#color {background-color:#000; Width: 100px; height: 100px;}
+</style>
+
+<div id="color"></div>
+
+<button type="button" id="go"> go! </button>
+
+<script src="C:\Users\ce416-01\workspace\project\one.js"> </script>
+
+//click the button and the box go down, and back again in origin position if click the button again.
+
+
+
+
+$(document).ready(function() {
+
+	$('#go').on('click', function(){
+		$('#color').animate({
+			left:1820,
+			top:579
+		}, 200);
+	});
+	
+]);
